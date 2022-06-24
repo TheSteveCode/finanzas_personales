@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finanzas personales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="w3css-master/w3.css">
+</head>
+<body>
+  <div class="hero-image">
+
+   <div class="w3-panel w3-center w3-green header">
+       <h1>Finanzas personales</h1>
+    <p>Es la manera de administrar los recursos economicos que posees.</p>
+   </div>
+    
+    <div class="w3-container w3-left" id="ingresos">
+    
+    <div class="w3-tag w3-round w3-blue" style="padding: 3px; width: 100%">
+    <div class="w3-tag w3-round w3-blue w3-border w3-border-white" style="width: 100%">
+    <marquee behavior="" direction=""><h2>Ingresos</h2></marquee></div> </div>
+
+    <div class="box1">
+
+        <!-- This section contain  -->
+    
+    <div class="w3-card w3-black w3-padding section" id="ingreFijos">
+    <h3>Ingresos Fijos</h3>
+    <p>Se refiere a los ingresos periódicos. Ejemplo: Sueldo quincenal, la pensión mensual, el pago mensual que te hacen por un alquiler, entre otros.</p>
+    <span class="w3-tag w3-card-4 w3-green w3-margin" id="txt"></span>
+    <input class="w3-input" type="text" id="fixed_income" placeholder="Sueldo...">
+    <button class="w3-button w3-green" onclick="fixedIncome()">Grabar sueldo <span class="w3-badge w3-margin-left w3-animate-fading">$</span> </button>
+    </div>
+    
+    <div class="w3-card w3-black w3-padding section" id="ingreVariables">
+    <h3>Ingresos Variables</h3>
+    <p>no son periódicos y no siempre son la misma cantidad. Ejemplo: Pagos por hora extra, ganancias de un premio, comisión, el pago por un trabajo pequeño, entre otros.</p>
+    <span class="w3-tag w3-card-4 w3-green w3-margin" id="txt_variable"></span>
+    <input class="w3-input" type="text" id="variable_income" placeholder="Ingreso...">
+    <button class="w3-button w3-green" onclick="variableIncome()">Grabar Ingreso<span class="w3-badge w3-margin-left w3-animate-fading">$</span></button>
+    </div>
+    
+    <div class="w3-card w3-black w3-padding section" id="IngreTotales">
+        <h3>Total de ingresos</h3>
+        <p class="w3-tag w3-card-4 w3-green w3-margin w3-animate-fading" id="total_income"></p>
+        <button class="w3-button w3-green" onclick="totalIncome()">Mostrar ingresos totales<span class="w3-badge w3-margin-left w3-animate-fading">$</span></button>
+    </div>
+
+</div>
+    
+    </div>
+    
+    </div>
+    <script src="income.js"></script>
+    
+</body>
+</html>
